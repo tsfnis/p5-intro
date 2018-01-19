@@ -1,0 +1,43 @@
+//var fighter = ""(ง’-‘︠)ง"";
+function preload() {
+  soundFormats('mp3');
+  hit = loadSound('onepunch.mp3');
+}
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  textFont("Arial");
+
+}
+
+function draw() {
+  background(220);
+  textSize(32);
+
+  //keep the buddy following on half the screen
+  var xc = constrain(mouseX-200, 100, windowWidth/2);
+
+  //lil buddy
+  if(mouseX-200 >= windowWidth/2) {
+    text("(ง’-‘︠)ง ", windowWidth/2, mouseY);
+  }
+
+  else if (mouseX >= 280){
+    text("(ง’-‘︠)ง ", xc, mouseY);
+  }
+
+  else if(hit.isPlaying()) {
+    text("‾͟͟͞(((ꎤˋ⁻̫ˊ)—̳͟͞͞o", xc, mouseY);
+  }
+
+  else {
+
+    hit.setVolume(0.1);
+    hit.playMode('restart');
+    hit.play();
+
+    text("‾͟͟͞(((ꎤˋ⁻̫ˊ)—̳͟͞͞o", 100, mouseY);
+
+  }
+
+}
