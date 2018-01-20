@@ -24,6 +24,7 @@ function draw() {
 }
 
 //handles changing the music
+//currently only one song
 function keyTyped(){
 
   if(mood == "k thanks") {
