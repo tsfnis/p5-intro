@@ -26,11 +26,7 @@ function draw() {
     text("(ง’-‘︠)ง ", xc, mouseY);
   }
 
-  else if(hit.isPlaying()) {
-    text("‾͟͟͞(((ꎤˋ⁻̫ˊ)—̳͟͞͞o", xc, mouseY);
-  }
-
-  else {
+  else if (mouseX != 0 && mouseX < 280){
 
     hit.setVolume(0.1);
     hit.playMode('restart');
@@ -38,6 +34,11 @@ function draw() {
 
     text("‾͟͟͞(((ꎤˋ⁻̫ˊ)—̳͟͞͞o", 100, mouseY);
 
+  }
+
+//screen loads mouse at 0,0 and we just need it to not play hit
+  else {
+    text("begin!", 100, 100);
   }
 
 }
