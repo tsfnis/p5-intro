@@ -115,8 +115,9 @@ function more() {
 }
 
 function less() {
-
+ if(howMany == 0) {
+   //do nothing, so not negative pups
+ } else {
     howMany--;
-
-
+  }
 }
