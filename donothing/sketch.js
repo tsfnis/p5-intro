@@ -1,5 +1,5 @@
 // thinking about the pressure to be productive, to create.
-// intentionally requires some poking around 
+// intentionally requires some poking around
 // you can type out whatever, feelings or gibberish, and
 // instead Pema Chödrön quotes will appear. Buddhism is a large
 // complex thing and while these excerpts run the risk of feeling
@@ -46,7 +46,7 @@ function draw() {
   fill(165, 87, 87);  //burgundy
   textSize(20);
 
-  text(sofar, 105, 105, 500, 400);
+  text(sofar+"_", 105, 105, 500, 400);
 
 }
 
