@@ -56,7 +56,15 @@ function keyPressed () {
   } else if(screen == 1){
     sofar += letters[i];
     i++;
+    sofar += letters[i];
+    i++;
+    sofar += letters[i];
+    i++;
   } else if(screen == 2){
+    sofar += letters[i];
+    i++;
+    sofar += letters[i];
+    i++;
     sofar += letters[i];
     i++;
   } else {
